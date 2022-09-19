@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0c9ed0daace735728227d9e92e56fc15 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0c9ed0daace735728227d9e92e56fc15" ></div>
+        
+</body>
+<script>    
+    
+            var map_0c9ed0daace735728227d9e92e56fc15 = L.map(
+                "map_0c9ed0daace735728227d9e92e56fc15",
+                {
+                    center: [36.83556755791667, 128.097342255],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_25b9e710d320b0b1d3276ff84f13f7fe = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0c9ed0daace735728227d9e92e56fc15);
+        
+    
+            var feature_group_fe52c9783b6441f1805eee4035535c5f = L.featureGroup(
+                {}
+            ).addTo(map_0c9ed0daace735728227d9e92e56fc15);
+        
+    
+            var marker_db8418071ce385b2cbdc68a5d1fabe23 = L.marker(
+                [36.83419444, 128.09704722],
+                {}
+            ).addTo(feature_group_fe52c9783b6441f1805eee4035535c5f);
+        
+    
+        var custom_icon_855bc611a423f296b2919529eb0390fe = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Children.png"});
+        marker_db8418071ce385b2cbdc68a5d1fabe23.setIcon(custom_icon_855bc611a423f296b2919529eb0390fe);
+        
+    
+        var popup_2de162845622b3209b000f19ee8009a2 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_5678435484d43203782e3693570748d9 = $(`<div id="html_5678435484d43203782e3693570748d9" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">         <input type="radio" name="slide" id="slide04">         <input type="radio" name="slide" id="slide05">         <input type="radio" name="slide" id="slide06">         <input type="radio" name="slide" id="slide07">         <input type="radio" name="slide" id="slide08">         <input type="radio" name="slide" id="slide09">         <input type="radio" name="slide" id="slide10">         <input type="radio" name="slide" id="slide11">         <input type="radio" name="slide" id="slide12">         <input type="radio" name="slide" id="slide13">         <input type="radio" name="slide" id="slide14">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_03.png" >                         <label for="slide04" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide03" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_04.png" >                         <label for="slide05" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide04" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_05.png" >                         <label for="slide06" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide05" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_06.png" >                         <label for="slide07" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide06" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_07.png" >                         <label for="slide08" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide07" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_08.png" >                         <label for="slide09" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide08" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_09.png" >                         <label for="slide10" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide09" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_10.png" >                         <label for="slide11" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide10" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_11.png" >                         <label for="slide12" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide11" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_12.png" >                         <label for="slide13" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide12" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_13.png" >                         <label for="slide14" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide13" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S2_14.png" >                         <label for="slide14" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}         .section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}         .section input[id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}         .section input[id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-500%);}         .section input[id="slide07"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-600%);}         .section input[id="slide08"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-700%);}         .section input[id="slide09"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-800%);}         .section input[id="slide10"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-900%);}         .section input[id="slide11"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1000%);}         .section input[id="slide12"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1100%);}         .section input[id="slide13"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1200%);}         .section input[id="slide14"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1300%);}     </style>     </div>`)[0];
+            popup_2de162845622b3209b000f19ee8009a2.setContent(html_5678435484d43203782e3693570748d9);
+        
+
+        marker_db8418071ce385b2cbdc68a5d1fabe23.bindPopup(popup_2de162845622b3209b000f19ee8009a2)
+        ;
+
+        
+    
+    
+            var poly_line_458f0ffba0ead93af7aefda18fcc9604 = L.polyline(
+                [[36.83419444, 128.09704722], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#1DA462", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1DA462", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_fe52c9783b6441f1805eee4035535c5f);
+        
+    
+            var marker_667d8e46c03bcd1d5619c0db8fff642d = L.marker(
+                [36.8339362, 128.097604],
+                {}
+            ).addTo(feature_group_fe52c9783b6441f1805eee4035535c5f);
+        
+    
+        var custom_icon_df56010c66ebd1d8780eeac739b97e4d = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Children.png"});
+        marker_667d8e46c03bcd1d5619c0db8fff642d.setIcon(custom_icon_df56010c66ebd1d8780eeac739b97e4d);
+        
+    
+        var popup_1e72f1683c193bbbf9db220ddead5b49 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_ae0ba4e2dd11ec26b744e01a983ae59a = $(`<div id="html_ae0ba4e2dd11ec26b744e01a983ae59a" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P4_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P4_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P4_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_1e72f1683c193bbbf9db220ddead5b49.setContent(html_ae0ba4e2dd11ec26b744e01a983ae59a);
+        
+
+        marker_667d8e46c03bcd1d5619c0db8fff642d.bindPopup(popup_1e72f1683c193bbbf9db220ddead5b49)
+        ;
+
+        
+    
+    
+            var poly_line_4e8acd33b8c740db8f15b9117af3242d = L.polyline(
+                [[36.83419444, 128.09704722], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#1DA462", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1DA462", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_fe52c9783b6441f1805eee4035535c5f);
+        
+    
+            var marker_a8d476a9dd4551c15527ef33c21fad91 = L.marker(
+                [36.8339639, 128.0988448],
+                {}
+            ).addTo(feature_group_fe52c9783b6441f1805eee4035535c5f);
+        
+    
+        var custom_icon_e1eda304d71d4cc9a14cd34d330c43e9 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Children.png"});
+        marker_a8d476a9dd4551c15527ef33c21fad91.setIcon(custom_icon_e1eda304d71d4cc9a14cd34d330c43e9);
+        
+    
+        var popup_5ffca0ecd230cdbe75a224609adfcde8 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_94fd239655d99466d572b26024a97f7d = $(`<div id="html_94fd239655d99466d572b26024a97f7d" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P5_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P5_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P5_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_5ffca0ecd230cdbe75a224609adfcde8.setContent(html_94fd239655d99466d572b26024a97f7d);
+        
+
+        marker_a8d476a9dd4551c15527ef33c21fad91.bindPopup(popup_5ffca0ecd230cdbe75a224609adfcde8)
+        ;
+
+        
+    
+    
+            var poly_line_aeacad2dfed0da96ee3f5add4ea189ff = L.polyline(
+                [[36.83419444, 128.09704722], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#1DA462", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1DA462", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_fe52c9783b6441f1805eee4035535c5f);
+        
+    
+            var marker_36d09fcc96c312ea23a014efb3d7ef0f = L.marker(
+                [36.833858, 128.0995924],
+                {}
+            ).addTo(feature_group_fe52c9783b6441f1805eee4035535c5f);
+        
+    
+        var custom_icon_b67961aef94c9e7561c90f45998c5f16 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Children.png"});
+        marker_36d09fcc96c312ea23a014efb3d7ef0f.setIcon(custom_icon_b67961aef94c9e7561c90f45998c5f16);
+        
+    
+        var popup_a9cfcdf7f2aa9d2646c50f115a97d525 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_48acfe06509207b1bebea4c4d8aaaacb = $(`<div id="html_48acfe06509207b1bebea4c4d8aaaacb" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P6_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P6_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P6_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_a9cfcdf7f2aa9d2646c50f115a97d525.setContent(html_48acfe06509207b1bebea4c4d8aaaacb);
+        
+
+        marker_36d09fcc96c312ea23a014efb3d7ef0f.bindPopup(popup_a9cfcdf7f2aa9d2646c50f115a97d525)
+        ;
+
+        
+    
+    
+            var poly_line_c82edfcfd23ceddb8a1963117328a979 = L.polyline(
+                [[36.83419444, 128.09704722], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#1DA462", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1DA462", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_fe52c9783b6441f1805eee4035535c5f);
+        
+    
+            var marker_a6e3a6c0b2fef28af54b02e33ebbad3d = L.marker(
+                [36.83414722, 128.09695556],
+                {}
+            ).addTo(feature_group_fe52c9783b6441f1805eee4035535c5f);
+        
+    
+        var custom_icon_fba457fd69c6eaf4981ecfe824ed721c = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Children.png"});
+        marker_a6e3a6c0b2fef28af54b02e33ebbad3d.setIcon(custom_icon_fba457fd69c6eaf4981ecfe824ed721c);
+        
+    
+        var popup_ad6bc5a30f73ab47c02513dae7bde8cf = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_558908f1c4ca3d15480e1d319b7aac5b = $(`<div id="html_558908f1c4ca3d15480e1d319b7aac5b" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">         <input type="radio" name="slide" id="slide04">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/E0_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/E0_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/E0_03.png" >                         <label for="slide04" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide03" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/E0_04.png" >                         <label for="slide04" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}         .section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}     </style>     </div>`)[0];
+            popup_ad6bc5a30f73ab47c02513dae7bde8cf.setContent(html_558908f1c4ca3d15480e1d319b7aac5b);
+        
+
+        marker_a6e3a6c0b2fef28af54b02e33ebbad3d.bindPopup(popup_ad6bc5a30f73ab47c02513dae7bde8cf)
+        ;
+
+        
+    
+    
+            var poly_line_b2c6241a25b52a50d51974f062e7e8d4 = L.polyline(
+                [[36.83419444, 128.09704722], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#1DA462", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1DA462", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_fe52c9783b6441f1805eee4035535c5f);
+        
+    
+            var feature_group_05c998b6dbdf824b009f0855d2dc83bd = L.featureGroup(
+                {}
+            ).addTo(map_0c9ed0daace735728227d9e92e56fc15);
+        
+    
+            var marker_4a53fdb55d4938276c07ac2e2f27eeb5 = L.marker(
+                [36.8422447, 128.0933859],
+                {}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+        var custom_icon_44b1d48e6dda22c50c0e5518ff5222a5 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Challenger.png"});
+        marker_4a53fdb55d4938276c07ac2e2f27eeb5.setIcon(custom_icon_44b1d48e6dda22c50c0e5518ff5222a5);
+        
+    
+        var popup_dd241312f46d54428c1d5997eeefd36a = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_c18317469ae7c36ecfe5486068101b6c = $(`<div id="html_c18317469ae7c36ecfe5486068101b6c" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">         <input type="radio" name="slide" id="slide04">         <input type="radio" name="slide" id="slide05">         <input type="radio" name="slide" id="slide06">         <input type="radio" name="slide" id="slide07">         <input type="radio" name="slide" id="slide08">         <input type="radio" name="slide" id="slide09">         <input type="radio" name="slide" id="slide10">         <input type="radio" name="slide" id="slide11">         <input type="radio" name="slide" id="slide12">         <input type="radio" name="slide" id="slide13">         <input type="radio" name="slide" id="slide14">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_03.png" >                         <label for="slide04" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide03" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_04.png" >                         <label for="slide05" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide04" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_05.png" >                         <label for="slide06" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide05" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_06.png" >                         <label for="slide07" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide06" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_07.png" >                         <label for="slide08" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide07" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_08.png" >                         <label for="slide09" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide08" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_09.png" >                         <label for="slide10" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide09" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_10.png" >                         <label for="slide11" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide10" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_11.png" >                         <label for="slide12" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide11" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_12.png" >                         <label for="slide13" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide12" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_13.png" >                         <label for="slide14" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide13" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_14.png" >                         <label for="slide14" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}         .section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}         .section input[id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}         .section input[id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-500%);}         .section input[id="slide07"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-600%);}         .section input[id="slide08"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-700%);}         .section input[id="slide09"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-800%);}         .section input[id="slide10"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-900%);}         .section input[id="slide11"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1000%);}         .section input[id="slide12"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1100%);}         .section input[id="slide13"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1200%);}         .section input[id="slide14"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1300%);}     </style>     </div>`)[0];
+            popup_dd241312f46d54428c1d5997eeefd36a.setContent(html_c18317469ae7c36ecfe5486068101b6c);
+        
+
+        marker_4a53fdb55d4938276c07ac2e2f27eeb5.bindPopup(popup_dd241312f46d54428c1d5997eeefd36a)
+        ;
+
+        
+    
+    
+            var poly_line_c1273f0ec2d627dbceddeb0d103ff074 = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#FFCD46", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FFCD46", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+            var marker_67e3129768c8b8f8ba00190b85f4ecf0 = L.marker(
+                [36.8399757, 128.0941283],
+                {}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+        var custom_icon_0fb697f622c6133dc036207a60889eb5 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Challenger.png"});
+        marker_67e3129768c8b8f8ba00190b85f4ecf0.setIcon(custom_icon_0fb697f622c6133dc036207a60889eb5);
+        
+    
+        var popup_3fb2e9c31adce4dd28215de675223f95 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_389f3edc3178c892fcd394faae18586a = $(`<div id="html_389f3edc3178c892fcd394faae18586a" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P1_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P1_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P1_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_3fb2e9c31adce4dd28215de675223f95.setContent(html_389f3edc3178c892fcd394faae18586a);
+        
+
+        marker_67e3129768c8b8f8ba00190b85f4ecf0.bindPopup(popup_3fb2e9c31adce4dd28215de675223f95)
+        ;
+
+        
+    
+    
+            var poly_line_f272ee95836d52bd4cf419021cc36d1f = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#FFCD46", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FFCD46", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+            var marker_8031a0ff059d992ebe3b9c495e2fdbc0 = L.marker(
+                [36.83898392, 128.09420611],
+                {}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+        var custom_icon_2b76bb23b3e2ce9bb1a9f6c468b7e8cb = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Challenger.png"});
+        marker_8031a0ff059d992ebe3b9c495e2fdbc0.setIcon(custom_icon_2b76bb23b3e2ce9bb1a9f6c468b7e8cb);
+        
+    
+        var popup_2e2554fd4ed87e043cac65f316965e8a = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_928a21aba01492321ef61c7c283b6568 = $(`<div id="html_928a21aba01492321ef61c7c283b6568" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">         <input type="radio" name="slide" id="slide04">         <input type="radio" name="slide" id="slide05">         <input type="radio" name="slide" id="slide06">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P2_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P2_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P2_03.png" >                         <label for="slide04" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide03" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P2_04.png" >                         <label for="slide05" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide04" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P2_05.png" >                         <label for="slide06" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide05" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P2_06.png" >                         <label for="slide06" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}         .section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}         .section input[id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}         .section input[id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-500%);}     </style>     </div>`)[0];
+            popup_2e2554fd4ed87e043cac65f316965e8a.setContent(html_928a21aba01492321ef61c7c283b6568);
+        
+
+        marker_8031a0ff059d992ebe3b9c495e2fdbc0.bindPopup(popup_2e2554fd4ed87e043cac65f316965e8a)
+        ;
+
+        
+    
+    
+            var poly_line_1bb44127f2edebb7034f08bc4afc548d = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#FFCD46", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FFCD46", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+            var marker_69bc882c64d00cb50c13bd42ef77e6aa = L.marker(
+                [36.8360468, 128.0941641],
+                {}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+        var custom_icon_aa740e600fd785bbceb1a81a10fb4be3 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Challenger.png"});
+        marker_69bc882c64d00cb50c13bd42ef77e6aa.setIcon(custom_icon_aa740e600fd785bbceb1a81a10fb4be3);
+        
+    
+        var popup_f05f6b2ee79a09ce41967118c9707ed6 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_2d9e8d03425b1b7826f1b3dbd71f8a73 = $(`<div id="html_2d9e8d03425b1b7826f1b3dbd71f8a73" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P3_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P3_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P3_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_f05f6b2ee79a09ce41967118c9707ed6.setContent(html_2d9e8d03425b1b7826f1b3dbd71f8a73);
+        
+
+        marker_69bc882c64d00cb50c13bd42ef77e6aa.bindPopup(popup_f05f6b2ee79a09ce41967118c9707ed6)
+        ;
+
+        
+    
+    
+            var poly_line_f931fcfafaf00d658782324daf8ffb05 = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#FFCD46", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FFCD46", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+            var marker_5bc7bdf73e8b7fb33813e8aa48d6e9a2 = L.marker(
+                [36.8339362, 128.097604],
+                {}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+        var custom_icon_2c1ccac11dea334aafa851d83fc033b2 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Challenger.png"});
+        marker_5bc7bdf73e8b7fb33813e8aa48d6e9a2.setIcon(custom_icon_2c1ccac11dea334aafa851d83fc033b2);
+        
+    
+        var popup_33f4acb67072b8ff0dc5466c196c8dce = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_5ddd2e4f9879f8ceb9ebb65246934bcf = $(`<div id="html_5ddd2e4f9879f8ceb9ebb65246934bcf" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P4_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P4_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P4_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_33f4acb67072b8ff0dc5466c196c8dce.setContent(html_5ddd2e4f9879f8ceb9ebb65246934bcf);
+        
+
+        marker_5bc7bdf73e8b7fb33813e8aa48d6e9a2.bindPopup(popup_33f4acb67072b8ff0dc5466c196c8dce)
+        ;
+
+        
+    
+    
+            var poly_line_bb7822c8d982c5e8d50d48ad2305065c = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#FFCD46", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FFCD46", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+            var marker_52dd9034d57832f6113bde252bda6d81 = L.marker(
+                [36.8339639, 128.0988448],
+                {}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+        var custom_icon_10998b92c25f9ede62a0b0b73a16acd2 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Challenger.png"});
+        marker_52dd9034d57832f6113bde252bda6d81.setIcon(custom_icon_10998b92c25f9ede62a0b0b73a16acd2);
+        
+    
+        var popup_9e4fe101e97d1bc3fb8a4c6fa6ecbb33 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_80eedcf527691d266a6a0aba042c9602 = $(`<div id="html_80eedcf527691d266a6a0aba042c9602" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P5_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P5_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P5_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_9e4fe101e97d1bc3fb8a4c6fa6ecbb33.setContent(html_80eedcf527691d266a6a0aba042c9602);
+        
+
+        marker_52dd9034d57832f6113bde252bda6d81.bindPopup(popup_9e4fe101e97d1bc3fb8a4c6fa6ecbb33)
+        ;
+
+        
+    
+    
+            var poly_line_1b84248318cbb28d93406acbc1876a73 = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#FFCD46", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FFCD46", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+            var marker_c18a57864e4f2a372fa1b156044738da = L.marker(
+                [36.833858, 128.0995924],
+                {}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+        var custom_icon_9a0d8fb84884791307c80f390d03cde4 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Challenger.png"});
+        marker_c18a57864e4f2a372fa1b156044738da.setIcon(custom_icon_9a0d8fb84884791307c80f390d03cde4);
+        
+    
+        var popup_1800640d370eb9a9d43c91049552892b = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_b986fe4f496ee5edce538389811ddba9 = $(`<div id="html_b986fe4f496ee5edce538389811ddba9" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P6_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P6_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P6_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_1800640d370eb9a9d43c91049552892b.setContent(html_b986fe4f496ee5edce538389811ddba9);
+        
+
+        marker_c18a57864e4f2a372fa1b156044738da.bindPopup(popup_1800640d370eb9a9d43c91049552892b)
+        ;
+
+        
+    
+    
+            var poly_line_08d1f649f777a9a451242d2e48e31d3b = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#FFCD46", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FFCD46", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+            var marker_c6a8038231f7abad6f1282730489001f = L.marker(
+                [36.83414722, 128.09695556],
+                {}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+        var custom_icon_ce1eefb7b7a0c6473465553be87f1db2 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Challenger.png"});
+        marker_c6a8038231f7abad6f1282730489001f.setIcon(custom_icon_ce1eefb7b7a0c6473465553be87f1db2);
+        
+    
+        var popup_9dfae8017727caf62cb0bb1858b1c9cd = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_21ae733393bff032037c567d69155c4a = $(`<div id="html_21ae733393bff032037c567d69155c4a" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">         <input type="radio" name="slide" id="slide04">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/E0_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/E0_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/E0_03.png" >                         <label for="slide04" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide03" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/E0_04.png" >                         <label for="slide04" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}         .section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}     </style>     </div>`)[0];
+            popup_9dfae8017727caf62cb0bb1858b1c9cd.setContent(html_21ae733393bff032037c567d69155c4a);
+        
+
+        marker_c6a8038231f7abad6f1282730489001f.bindPopup(popup_9dfae8017727caf62cb0bb1858b1c9cd)
+        ;
+
+        
+    
+    
+            var poly_line_85d998dadb5f8a45a833e4808a77eb01 = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924]],
+                {"bubblingMouseEvents": true, "color": "#FFCD46", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FFCD46", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_05c998b6dbdf824b009f0855d2dc83bd);
+        
+    
+            var feature_group_3d62989c55aff54000224c1d7a615216 = L.featureGroup(
+                {}
+            ).addTo(map_0c9ed0daace735728227d9e92e56fc15);
+        
+    
+            var marker_1af2c9b17702305c5780a0149fc2c0c8 = L.marker(
+                [36.8422447, 128.0933859],
+                {}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+        var custom_icon_8d9fe58fb096b8813c1ce4d6c8449f5e = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Explorer.png"});
+        marker_1af2c9b17702305c5780a0149fc2c0c8.setIcon(custom_icon_8d9fe58fb096b8813c1ce4d6c8449f5e);
+        
+    
+        var popup_9599776e0df3bc2e0040dfce797e5949 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_a3df9ae25ed4baa0a8045a1052c6303f = $(`<div id="html_a3df9ae25ed4baa0a8045a1052c6303f" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">         <input type="radio" name="slide" id="slide04">         <input type="radio" name="slide" id="slide05">         <input type="radio" name="slide" id="slide06">         <input type="radio" name="slide" id="slide07">         <input type="radio" name="slide" id="slide08">         <input type="radio" name="slide" id="slide09">         <input type="radio" name="slide" id="slide10">         <input type="radio" name="slide" id="slide11">         <input type="radio" name="slide" id="slide12">         <input type="radio" name="slide" id="slide13">         <input type="radio" name="slide" id="slide14">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_03.png" >                         <label for="slide04" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide03" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_04.png" >                         <label for="slide05" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide04" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_05.png" >                         <label for="slide06" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide05" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_06.png" >                         <label for="slide07" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide06" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_07.png" >                         <label for="slide08" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide07" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_08.png" >                         <label for="slide09" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide08" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_09.png" >                         <label for="slide10" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide09" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_10.png" >                         <label for="slide11" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide10" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_11.png" >                         <label for="slide12" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide11" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_12.png" >                         <label for="slide13" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide12" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_13.png" >                         <label for="slide14" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide13" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/S1_14.png" >                         <label for="slide14" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}         .section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}         .section input[id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}         .section input[id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-500%);}         .section input[id="slide07"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-600%);}         .section input[id="slide08"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-700%);}         .section input[id="slide09"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-800%);}         .section input[id="slide10"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-900%);}         .section input[id="slide11"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1000%);}         .section input[id="slide12"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1100%);}         .section input[id="slide13"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1200%);}         .section input[id="slide14"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1300%);}     </style>     </div>`)[0];
+            popup_9599776e0df3bc2e0040dfce797e5949.setContent(html_a3df9ae25ed4baa0a8045a1052c6303f);
+        
+
+        marker_1af2c9b17702305c5780a0149fc2c0c8.bindPopup(popup_9599776e0df3bc2e0040dfce797e5949)
+        ;
+
+        
+    
+    
+            var poly_line_a023228424c1e0ae47d963c80cbd9c63 = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924], [36.8326616, 128.1023665], [36.8322564, 128.1041533], [36.83229075, 128.101888]],
+                {"bubblingMouseEvents": true, "color": "#DD5144", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#DD5144", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+            var marker_86ed974268325140a9ed2cc4919ed65b = L.marker(
+                [36.8399757, 128.0941283],
+                {}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+        var custom_icon_d10708b6480538e55f3f3c5b6dc34e34 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Explorer.png"});
+        marker_86ed974268325140a9ed2cc4919ed65b.setIcon(custom_icon_d10708b6480538e55f3f3c5b6dc34e34);
+        
+    
+        var popup_fee2961ecaebd18c8cf545d8f435e14c = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_be9504068d52448f5df7b8e76768de1c = $(`<div id="html_be9504068d52448f5df7b8e76768de1c" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P1_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P1_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P1_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_fee2961ecaebd18c8cf545d8f435e14c.setContent(html_be9504068d52448f5df7b8e76768de1c);
+        
+
+        marker_86ed974268325140a9ed2cc4919ed65b.bindPopup(popup_fee2961ecaebd18c8cf545d8f435e14c)
+        ;
+
+        
+    
+    
+            var poly_line_973bae31d43bb08133a4c0803eb7e75e = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924], [36.8326616, 128.1023665], [36.8322564, 128.1041533], [36.83229075, 128.101888]],
+                {"bubblingMouseEvents": true, "color": "#DD5144", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#DD5144", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+            var marker_35e92065187a852656fc32ba989034ac = L.marker(
+                [36.83898392, 128.09420611],
+                {}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+        var custom_icon_61678fa5940cf282b2fbad557dc9bb87 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Explorer.png"});
+        marker_35e92065187a852656fc32ba989034ac.setIcon(custom_icon_61678fa5940cf282b2fbad557dc9bb87);
+        
+    
+        var popup_094ddc34d7941cd953a2b9671f0120e9 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_e6f8cbe19bbc5808fd9d020e8885c99f = $(`<div id="html_e6f8cbe19bbc5808fd9d020e8885c99f" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">         <input type="radio" name="slide" id="slide04">         <input type="radio" name="slide" id="slide05">         <input type="radio" name="slide" id="slide06">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P2_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P2_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P2_03.png" >                         <label for="slide04" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide03" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P2_04.png" >                         <label for="slide05" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide04" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P2_05.png" >                         <label for="slide06" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide05" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P2_06.png" >                         <label for="slide06" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}         .section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}         .section input[id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}         .section input[id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-500%);}     </style>     </div>`)[0];
+            popup_094ddc34d7941cd953a2b9671f0120e9.setContent(html_e6f8cbe19bbc5808fd9d020e8885c99f);
+        
+
+        marker_35e92065187a852656fc32ba989034ac.bindPopup(popup_094ddc34d7941cd953a2b9671f0120e9)
+        ;
+
+        
+    
+    
+            var poly_line_3c3841194c2d67a43e390f024091069e = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924], [36.8326616, 128.1023665], [36.8322564, 128.1041533], [36.83229075, 128.101888]],
+                {"bubblingMouseEvents": true, "color": "#DD5144", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#DD5144", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+            var marker_4367ff556c0d26a72d90d4dcd33889f4 = L.marker(
+                [36.8360468, 128.0941641],
+                {}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+        var custom_icon_451e2e3c83b5108eb8f20cb3db206210 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Explorer.png"});
+        marker_4367ff556c0d26a72d90d4dcd33889f4.setIcon(custom_icon_451e2e3c83b5108eb8f20cb3db206210);
+        
+    
+        var popup_b7401940c3b4e3971bdf831cf6a165bb = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_1f049d19ceef47693b505ffcc67bcd39 = $(`<div id="html_1f049d19ceef47693b505ffcc67bcd39" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P3_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P3_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P3_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_b7401940c3b4e3971bdf831cf6a165bb.setContent(html_1f049d19ceef47693b505ffcc67bcd39);
+        
+
+        marker_4367ff556c0d26a72d90d4dcd33889f4.bindPopup(popup_b7401940c3b4e3971bdf831cf6a165bb)
+        ;
+
+        
+    
+    
+            var poly_line_f11dad3d042bf3872641f7c93fe6245f = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924], [36.8326616, 128.1023665], [36.8322564, 128.1041533], [36.83229075, 128.101888]],
+                {"bubblingMouseEvents": true, "color": "#DD5144", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#DD5144", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+            var marker_a28bc43a82048acae9e1dc8397429478 = L.marker(
+                [36.8339362, 128.097604],
+                {}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+        var custom_icon_f876c3b406cc2bb4d7f4efd765392dba = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Explorer.png"});
+        marker_a28bc43a82048acae9e1dc8397429478.setIcon(custom_icon_f876c3b406cc2bb4d7f4efd765392dba);
+        
+    
+        var popup_9e50e3f6d6af867f28cf1632e47c8544 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_51083233a8feb878ecf660ab342b416b = $(`<div id="html_51083233a8feb878ecf660ab342b416b" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P4_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P4_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P4_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_9e50e3f6d6af867f28cf1632e47c8544.setContent(html_51083233a8feb878ecf660ab342b416b);
+        
+
+        marker_a28bc43a82048acae9e1dc8397429478.bindPopup(popup_9e50e3f6d6af867f28cf1632e47c8544)
+        ;
+
+        
+    
+    
+            var poly_line_c0bcc42b66b5884ffdd3b1682b11fe76 = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924], [36.8326616, 128.1023665], [36.8322564, 128.1041533], [36.83229075, 128.101888]],
+                {"bubblingMouseEvents": true, "color": "#DD5144", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#DD5144", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+            var marker_f88d2ee1b24869da121224c45c2609bb = L.marker(
+                [36.8339639, 128.0988448],
+                {}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+        var custom_icon_5f49dd3c1ef002459661f6634e89b54a = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Explorer.png"});
+        marker_f88d2ee1b24869da121224c45c2609bb.setIcon(custom_icon_5f49dd3c1ef002459661f6634e89b54a);
+        
+    
+        var popup_90729539a5eedd2ad845d5b92a489180 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_6310a42b1a9e17bf715d7ba7b29e5713 = $(`<div id="html_6310a42b1a9e17bf715d7ba7b29e5713" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P5_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P5_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P5_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_90729539a5eedd2ad845d5b92a489180.setContent(html_6310a42b1a9e17bf715d7ba7b29e5713);
+        
+
+        marker_f88d2ee1b24869da121224c45c2609bb.bindPopup(popup_90729539a5eedd2ad845d5b92a489180)
+        ;
+
+        
+    
+    
+            var poly_line_686eb2874acff85f254433dad5725aa5 = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924], [36.8326616, 128.1023665], [36.8322564, 128.1041533], [36.83229075, 128.101888]],
+                {"bubblingMouseEvents": true, "color": "#DD5144", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#DD5144", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+            var marker_adc1cffbb78de78828a819a4f1b1aa40 = L.marker(
+                [36.833858, 128.0995924],
+                {}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+        var custom_icon_88ec379565ac899262020bf3264491d9 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Explorer.png"});
+        marker_adc1cffbb78de78828a819a4f1b1aa40.setIcon(custom_icon_88ec379565ac899262020bf3264491d9);
+        
+    
+        var popup_7a78038a75d856654d631740785c3f75 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_1a498d5bd20ad3df37b270704ed5ad7d = $(`<div id="html_1a498d5bd20ad3df37b270704ed5ad7d" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P6_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P6_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P6_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_7a78038a75d856654d631740785c3f75.setContent(html_1a498d5bd20ad3df37b270704ed5ad7d);
+        
+
+        marker_adc1cffbb78de78828a819a4f1b1aa40.bindPopup(popup_7a78038a75d856654d631740785c3f75)
+        ;
+
+        
+    
+    
+            var poly_line_4cbb8e4254e27257d4f6bbdbed83d98a = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924], [36.8326616, 128.1023665], [36.8322564, 128.1041533], [36.83229075, 128.101888]],
+                {"bubblingMouseEvents": true, "color": "#DD5144", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#DD5144", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+            var marker_ae2ddfa5ca476f4e62ab6efae76ad8b2 = L.marker(
+                [36.8326616, 128.1023665],
+                {}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+        var custom_icon_8f0b14b31aeef4e0ef7e38e5cfdc82d5 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Explorer.png"});
+        marker_ae2ddfa5ca476f4e62ab6efae76ad8b2.setIcon(custom_icon_8f0b14b31aeef4e0ef7e38e5cfdc82d5);
+        
+    
+        var popup_abfc9c0d8fc17a452cfcbc47bc9c6bfc = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_6f0ed4ab02efa54b5a3f5e6d6ce05cd2 = $(`<div id="html_6f0ed4ab02efa54b5a3f5e6d6ce05cd2" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P7_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P7_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P7_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_abfc9c0d8fc17a452cfcbc47bc9c6bfc.setContent(html_6f0ed4ab02efa54b5a3f5e6d6ce05cd2);
+        
+
+        marker_ae2ddfa5ca476f4e62ab6efae76ad8b2.bindPopup(popup_abfc9c0d8fc17a452cfcbc47bc9c6bfc)
+        ;
+
+        
+    
+    
+            var poly_line_514d9f95bb5c934c1728222d0dd3a909 = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924], [36.8326616, 128.1023665], [36.8322564, 128.1041533], [36.83229075, 128.101888]],
+                {"bubblingMouseEvents": true, "color": "#DD5144", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#DD5144", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+            var marker_0bf0d7cb2957fa0db1779c1dcc6296c0 = L.marker(
+                [36.8322564, 128.1041533],
+                {}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+        var custom_icon_f79799278b8b04eb93de85fd0545a9d5 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Explorer.png"});
+        marker_0bf0d7cb2957fa0db1779c1dcc6296c0.setIcon(custom_icon_f79799278b8b04eb93de85fd0545a9d5);
+        
+    
+        var popup_3830f4df22fde718b69d7258b523d0b3 = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_286e2b44b30f1ffdd408537fe792a15f = $(`<div id="html_286e2b44b30f1ffdd408537fe792a15f" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P8_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P8_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P8_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_3830f4df22fde718b69d7258b523d0b3.setContent(html_286e2b44b30f1ffdd408537fe792a15f);
+        
+
+        marker_0bf0d7cb2957fa0db1779c1dcc6296c0.bindPopup(popup_3830f4df22fde718b69d7258b523d0b3)
+        ;
+
+        
+    
+    
+            var poly_line_4ebd4c7d51042743a4becbc88604b961 = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924], [36.8326616, 128.1023665], [36.8322564, 128.1041533], [36.83229075, 128.101888]],
+                {"bubblingMouseEvents": true, "color": "#DD5144", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#DD5144", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+            var marker_72d62efa79271bce4b875684b1545d60 = L.marker(
+                [36.83229075, 128.101888],
+                {}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+        var custom_icon_66c88ae68f2db6e188afe671f92c1b66 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Explorer.png"});
+        marker_72d62efa79271bce4b875684b1545d60.setIcon(custom_icon_66c88ae68f2db6e188afe671f92c1b66);
+        
+    
+        var popup_45c51052514c9f1fbad8d170dfb382fa = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_823b8170fce45d5c53361bf3ba38b33e = $(`<div id="html_823b8170fce45d5c53361bf3ba38b33e" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P9_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P9_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/P9_03.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}     </style>     </div>`)[0];
+            popup_45c51052514c9f1fbad8d170dfb382fa.setContent(html_823b8170fce45d5c53361bf3ba38b33e);
+        
+
+        marker_72d62efa79271bce4b875684b1545d60.bindPopup(popup_45c51052514c9f1fbad8d170dfb382fa)
+        ;
+
+        
+    
+    
+            var poly_line_c9d6622698a969335dab1faaa00ec9ba = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924], [36.8326616, 128.1023665], [36.8322564, 128.1041533], [36.83229075, 128.101888]],
+                {"bubblingMouseEvents": true, "color": "#DD5144", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#DD5144", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+            var marker_a93a31240b4386b01fb1673eb78d1698 = L.marker(
+                [36.83414722, 128.09695556],
+                {}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+        var custom_icon_1f30ebedb87a0fced36e33ccda60be50 = L.icon({"iconSize": [50, 50], "iconUrl": "https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/Explorer.png"});
+        marker_a93a31240b4386b01fb1673eb78d1698.setIcon(custom_icon_1f30ebedb87a0fced36e33ccda60be50);
+        
+    
+        var popup_6d1229f9440dac764ccae7a40ccb3e6e = L.popup({"maxWidth": 240, "minWidth": 240});
+
+        
+            var html_8cd7614946d861ed0844ff2e7b634801 = $(`<div id="html_8cd7614946d861ed0844ff2e7b634801" style="width: 100.0%; height: 100.0%;">     <div class="section">         <input type="radio" name="slide" id="slide01" checked>         <input type="radio" name="slide" id="slide02">         <input type="radio" name="slide" id="slide03">         <input type="radio" name="slide" id="slide04">          <div class="slidewrap">             <ul class="slidelist">                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/E0_01.png" >                         <label for="slide02" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide01" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/E0_02.png" >                         <label for="slide03" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide02" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/E0_03.png" >                         <label for="slide04" class="right"></label>                     </a>                 </li>                 <li>                     <a>                         <label for="slide03" class="left"></label>                             <img src="https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/E0_04.png" >                         <label for="slide04" class="right"></label>                     </a>                 </li>             </ul>         </div>     </div>     <style>         * {margin:0;padding:0;}         .section input[id*="slide"] {display:none;}          .section .slidewrap {max-width:240px;margin:0 auto;overflow:hidden;}         .section .slidelist {white-space:nowrap;font-size:0;}         .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}         .section .slidelist > li > a {display:block;position:relative;}         .section .slidelist > li > a img {width:100%;}          .section .slidelist label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:25px;cursor:pointer;}         .section .slidelist .left {left:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/left.png") center center / 20% no-repeat;}         .section .slidelist .right {right:10px;background:url("https://raw.githubusercontent.com/osgeokr/exploreKNP/main/data/right.png") center center / 20% no-repeat;}          .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}         .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}         .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}         .section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}     </style>     </div>`)[0];
+            popup_6d1229f9440dac764ccae7a40ccb3e6e.setContent(html_8cd7614946d861ed0844ff2e7b634801);
+        
+
+        marker_a93a31240b4386b01fb1673eb78d1698.bindPopup(popup_6d1229f9440dac764ccae7a40ccb3e6e)
+        ;
+
+        
+    
+    
+            var poly_line_c74ce5c83da8ad36a9bc0ac2ca9cb7e8 = L.polyline(
+                [[36.8422447, 128.0933859], [36.8399757, 128.0941283], [36.83898392, 128.09420611], [36.8360468, 128.0941641], [36.8339362, 128.097604], [36.8339639, 128.0988448], [36.833858, 128.0995924], [36.8326616, 128.1023665], [36.8322564, 128.1041533], [36.83229075, 128.101888]],
+                {"bubblingMouseEvents": true, "color": "#DD5144", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#DD5144", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 20}
+            ).addTo(feature_group_3d62989c55aff54000224c1d7a615216);
+        
+    
+            var locate_control_f7f8afc0df268d44921c8b1b1a8189e5 = L.control.locate(
+                {}
+            ).addTo(map_0c9ed0daace735728227d9e92e56fc15);
+            
+        
+    
+            var layer_control_e47767fafca679734bbb416ad39c9db9 = {
+                base_layers : {
+                    "GPS\ud0d0\ubc29\ub85c" : tile_layer_25b9e710d320b0b1d3276ff84f13f7fe,
+                },
+                overlays :  {
+                    "\uc5b4\ub9b0\uc774\ucf54\uc2a4" : feature_group_fe52c9783b6441f1805eee4035535c5f,
+                    "\ub3c4\uc804\uc790\ucf54\uc2a4" : feature_group_05c998b6dbdf824b009f0855d2dc83bd,
+                    "\ud0d0\ud5d8\uac00\ucf54\uc2a4" : feature_group_3d62989c55aff54000224c1d7a615216,
+                },
+            };
+            L.control.layers(
+                layer_control_e47767fafca679734bbb416ad39c9db9.base_layers,
+                layer_control_e47767fafca679734bbb416ad39c9db9.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_0c9ed0daace735728227d9e92e56fc15);
+            feature_group_05c998b6dbdf824b009f0855d2dc83bd.remove();
+            feature_group_3d62989c55aff54000224c1d7a615216.remove();
+        
+</script>
